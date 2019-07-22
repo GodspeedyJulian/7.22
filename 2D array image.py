@@ -22,11 +22,12 @@ def lighten(im,l):
 def flip(im):
     
     a = np.array(im)
+    print (a[3])
     
 
     for z in range(len (a)):
         a[z]=a[z][::-1]
-    #print (a[3])
+    print (a[3])
     return Image.fromarray(a)
 
 
